@@ -2,5 +2,5 @@ class Show < ActiveRecord::Base
   
   
   def highest_rating
-    SELECT * show ORDER BY ratings 
+    "SELECT * FROM show ORDER BY ratings MAXIMUM  "
 end
